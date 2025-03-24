@@ -3,7 +3,7 @@ import { TaskManagementPanel } from './TaskManagementPanel';
 import { Task } from './interface';
 
 const meta: Meta<typeof TaskManagementPanel> = {
-  title: 'Components/TaskManagementPanel',
+  title: 'Components/cline/TaskManagementPanel',
   component: TaskManagementPanel,
   parameters: {
     layout: 'centered'
@@ -24,7 +24,7 @@ export const Default: Story = {
   args: {
     tasks: defaultTasks,
     onAddTask: (content) => {
-      console.log('添加任务:', content);
+      console.log('添加任务1:', content);
     },
     onToggleTask: (id) => {
       console.log('切换任务状态:', id);

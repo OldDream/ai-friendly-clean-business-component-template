@@ -14,6 +14,9 @@ dependencies:
   antd:
     specifier: ^5.21.5
     version: 5.24.4(react-dom@18.2.0)(react@18.2.0)
+  dayjs:
+    specifier: ^1.11.13
+    version: 1.11.13
   next:
     specifier: 14.2.3
     version: 14.2.3(@babel/core@7.26.10)(react-dom@18.2.0)(react@18.2.0)

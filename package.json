@@ -8,12 +8,14 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006 --debug-webpack",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build-components-codegen": "DIFY_API_KEY=app-JiFqxhfOkpKBmgRSezSRDsEB node /Users/hyn/Desktop/AIStuff/dify-mcp-server/build/dify-command-tool.js"
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
     "@ant-design/nextjs-registry": "^1.0.1",
     "antd": "^5.21.5",
+    "dayjs": "^1.11.13",
     "next": "14.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"

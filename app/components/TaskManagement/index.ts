@@ -1,5 +1,3 @@
-import TaskManagement from './TaskManagement';
-export { TaskManagement };
+export { default as TaskManagement } from './TaskManagement';
 export * from './interface';
-export * from './helpers';
-export default TaskManagement; 
+export * from './helpers'; 

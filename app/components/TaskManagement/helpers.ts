@@ -28,9 +28,22 @@ export const filterTasksBySearchTerm = (tasks: Task[], searchTerm: string): Task
 };
 
 /**
+ * Filter tasks based on a search text
+ * @param tasks Array of tasks to filter
+ * @param searchText Text to search for in task titles
+ * @returns Filtered tasks array
+ */
+export const filterTasks = (tasks: Task[], searchText: string): Task[] => {
+  if (!searchText) return tasks;
+  return tasks.filter(task =>
+    task.title.toLowerCase().includes(searchText.toLowerCase())
+  );
+};
+
+/**
  * Generate a unique ID for a new task
  * @returns A unique string ID
  */
 export const generateTaskId = (): string => {
-  return Date.now().toString() + Math.random().toString(36).substr(2, 9);
+  return Math.random().toString(36).substr(2, 9);
 }; 

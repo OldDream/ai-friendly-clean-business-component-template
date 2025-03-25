@@ -1,6 +1,6 @@
 export interface Task {
   id: string;
-  name: string;
+  title: string;
   completed: boolean;
 }
 
@@ -12,28 +12,27 @@ export interface TaskManagementProps {
 
   /**
    * Handler for adding a new task
-   * @param taskName The name of the new task to be added
+   * @param taskTitle The title of the new task to be added
    */
-  onAddTask: (taskName: string) => void;
+  onAdd: (taskTitle: string) => void;
 
   /**
    * Handler for searching tasks
-   * @param searchTerm The search term to filter tasks
+   * @param searchText The search text to filter tasks
    */
-  onSearch: (searchTerm: string) => void;
+  onSearch: (searchText: string) => void;
 
   /**
    * Handler for toggling the completion status of a task
    * @param taskId The ID of the task to toggle
-   * @param completed The new completion status
    */
-  onToggleTask: (taskId: string, completed: boolean) => void;
+  onToggleComplete: (taskId: string) => void;
 
   /**
    * Handler for deleting a task
    * @param taskId The ID of the task to delete
    */
-  onDeleteTask: (taskId: string) => void;
+  onDelete: (taskId: string) => void;
 
   /**
    * Flag indicating if tasks are currently loading

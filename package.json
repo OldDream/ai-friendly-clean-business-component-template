@@ -9,7 +9,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006 --debug-webpack",
     "build-storybook": "storybook build",
-    "build-components-codegen": "DIFY_API_KEY=app-JiFqxhfOkpKBmgRSezSRDsEB node /Users/hyn/Desktop/AIStuff/dify-mcp-server/build/dify-command-tool.js"
+    "biz-component-codegen": "DIFY_API_KEY=app-VRWVRGL2JLzJWezQ2oAAgVmL node /Users/hyn/Desktop/AIStuff/dify-mcp-server/build/dify-command-tool.js"
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.1",

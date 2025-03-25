@@ -120,3 +120,17 @@ Loading.parameters = {
     }
   }
 };
+
+export const Default = Template.bind({});
+Default.args = {
+  tasks: [
+    { id: '1', title: '任务一', completed: true },
+    { id: '2', title: '任务二', completed: true },
+    { id: '3', title: '任务三', completed: false },
+    { id: '4', title: '任务四', completed: false }
+  ],
+  onSearch: (text) => console.log('Search:', text),
+  onAddTask: (title) => console.log('Add:', title),
+  onDeleteTask: (id) => console.log('Delete:', id),
+  onToggleTask: (id) => console.log('Toggle:', id)
+};

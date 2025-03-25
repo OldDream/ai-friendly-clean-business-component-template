@@ -1,0 +1,29 @@
+{
+  "tools": [
+    {
+      "name": "generate_business_component",
+      "description": "Generate a business component based on user requirements and image input. This tool will execute 'npm run biz-component-codegen' with the user's query and image path, then create the component file in the app/components directory.",
+      "command": "npm run biz-component-codegen \"${query}\" \"${imageFilePath}\"",
+      "parameters": {
+        "query": {
+          "type": "string",
+          "description": "The user's original requirement for the business component"
+        },
+        "imageFilePath": {
+          "type": "string",
+          "description": "Path to the reference image file for component generation",
+          "optional": true
+        }
+      },
+      "output_parser": {
+        "type": "code_string",
+        "description": "The output will be a code string that should be saved as a new component file in the app/components directory"
+      },
+      "post_process": {
+        "type": "file_creation",
+        "target_directory": "app/components",
+        "file_extension": ".tsx"
+      }
+    }
+  ]
+}
